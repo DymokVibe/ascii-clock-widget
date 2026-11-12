@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/ascii_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autoSizeMaxTextSize="22sp"
+        android:autoSizeMinTextSize="7sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="0.90"
+        android:maxLines="6"
+        android:shadowColor="#D9000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textColor="@color/ascii_clock_primary"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/ascii_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.08"
+        android:shadowColor="#D9000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:textColor="@color/ascii_clock_secondary"
+        android:textSize="12sp"
+        android:typeface="monospace" />
+
+</LinearLayout>
